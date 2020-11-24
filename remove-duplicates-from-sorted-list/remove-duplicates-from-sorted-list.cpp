@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "definitions.h"
+#include "../definitions.h"
 
 using namespace std;
 
@@ -11,7 +11,9 @@ ListNode *deleteDuplicates(ListNode *head)
     {
         if (node->val == node->next->val)
         {
+            ListNode *temp = node->next;
             node->next = node->next->next;
+            delete temp;
         }
         else
         {

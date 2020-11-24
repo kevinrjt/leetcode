@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
 
-#include "definitions.h"
+#include "../definitions.h"
 
 using namespace std;
 

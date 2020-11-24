@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "definitions.h"
+#include "../definitions.h"
 
 using namespace std;
 
