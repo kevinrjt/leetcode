@@ -52,4 +52,4 @@ public:
     }
 };
 
-#endif // DEFINITIONS_H_
+#endif

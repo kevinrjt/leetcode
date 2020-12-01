@@ -31,4 +31,4 @@ ListNode *constructListNode(vector<int> vals)
     return dummy.next;
 }
 
-#endif // UTILITIES_H_
+#endif
