@@ -20,6 +20,7 @@ ListNode *removeElements(ListNode *head, int val)
             pNode = &((*pNode)->next);
         }
     }
+
     return head;
 }
 
