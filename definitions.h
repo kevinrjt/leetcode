@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// Definition for singly-linked list.
+// Definition for a singly-linked list node.
 struct ListNode
 {
     int val;
@@ -13,6 +13,21 @@ struct ListNode
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
+// Definition for a singly-linked list node with random pointer.
+struct RandomListNode
+{
+    int val;
+    RandomListNode *next;
+    RandomListNode *random;
+
+    RandomListNode(int _val)
+    {
+        val = _val;
+        next = NULL;
+        random = NULL;
+    }
 };
 
 // Definition for a binary tree node.
@@ -26,26 +41,26 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-// Definition for a Node.
-class Node
+// Definition for a graph node.
+class GraphNode
 {
 public:
     int val;
-    vector<Node *> neighbors;
+    vector<GraphNode *> neighbors;
 
-    Node()
+    GraphNode()
     {
         val = 0;
-        neighbors = vector<Node *>();
+        neighbors = vector<GraphNode *>();
     }
 
-    Node(int _val)
+    GraphNode(int _val)
     {
         val = _val;
-        neighbors = vector<Node *>();
+        neighbors = vector<GraphNode *>();
     }
 
-    Node(int _val, vector<Node *> _neighbors)
+    GraphNode(int _val, vector<GraphNode *> _neighbors)
     {
         val = _val;
         neighbors = _neighbors;
