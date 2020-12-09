@@ -30,6 +30,15 @@ struct RandomListNode
     }
 };
 
+// Definition for a multilevel doubly-linked list node.
+struct MultilevelDoublyLinkedListNode
+{
+    int val;
+    MultilevelDoublyLinkedListNode *prev;
+    MultilevelDoublyLinkedListNode *next;
+    MultilevelDoublyLinkedListNode *child;
+};
+
 // Definition for a binary tree node.
 struct TreeNode
 {
