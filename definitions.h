@@ -50,6 +50,27 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+// Definition for a N-ary tree node.
+class NaryTreeNode
+{
+public:
+    int val;
+    vector<NaryTreeNode *> children;
+
+    NaryTreeNode() {}
+
+    NaryTreeNode(int _val)
+    {
+        val = _val;
+    }
+
+    NaryTreeNode(int _val, vector<NaryTreeNode *> _children)
+    {
+        val = _val;
+        children = _children;
+    }
+};
+
 // Definition for a graph node.
 class GraphNode
 {
