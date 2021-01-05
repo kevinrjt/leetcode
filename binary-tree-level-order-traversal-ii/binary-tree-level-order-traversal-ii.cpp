@@ -1,4 +1,3 @@
-#include <stack>
 #include <vector>
 
 #include "../definitions.h"
