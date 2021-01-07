@@ -31,4 +31,16 @@ ListNode *constructListNode(vector<int> vals)
     return dummy.next;
 }
 
+template <typename T>
+void printVector(vector<T> v)
+{
+    int len = v.size();
+    for (int i = 0; i < len - 1; ++i)
+    {
+        cout << v[i] << ",";
+    }
+
+    cout << v[len - 1] << endl;
+}
+
 #endif
