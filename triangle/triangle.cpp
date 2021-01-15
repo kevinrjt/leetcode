@@ -13,22 +13,15 @@ int minimumTotal(vector<vector<int>> &triangle)
     table[0] = triangle[0][0];
     for (int i = 1; i < n; ++i)
     {
-        int last = INT_MAX;
-        for (int j = 0; j <= i; ++j)
+        for (int j = i; j > 0; --j)
         {
-            int temp = table[j];
-            table[j] = triangle[i][j] + min(last, table[j]);
-            last = temp;
+            table[j] = triangle[i][j] + min(table[j - 1], table[j]);
         }
+
+        table[0] += triangle[i][0];
     }
 
-    int minSum = INT_MAX;
-    for (int s : table)
-    {
-        minSum = min(minSum, s);
-    }
-
-    return minSum;
+    return *min_element(table.begin(), table.end());
 }
 #endif
 
