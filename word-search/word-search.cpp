@@ -26,12 +26,9 @@ bool search(vector<vector<char>> &board, const string &word, int row, int col, i
 
 bool exist(vector<vector<char>> &board, string word)
 {
-    int m = board.size();
-    int n = board[0].size();
-    vector<vector<char>> visited(m, vector<char>(n));
-    for (int i = 0; i < m; ++i)
+    for (int i = 0; i < board.size(); ++i)
     {
-        for (int j = 0; j < n; ++j)
+        for (int j = 0; j < board[0].size(); ++j)
         {
             if (search(board, word, i, j, 0))
             {
