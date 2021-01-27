@@ -31,20 +31,21 @@ int lengthOfLIS(vector<int> &nums)
 #ifdef SOLUTION_2
 int lengthOfLIS(vector<int> &nums)
 {
-    int len = nums.size();
-    vector<int> table(len);
-    int lis = 0;
-    for (int i = 0; i < len; ++i)
+    vector<int> table;
+    for (int num : nums)
     {
-        int j = lower_bound(table.begin(), table.begin() + lis, nums[i]) - table.begin();
-        table[j] = nums[i];
-        if (j == lis)
+        auto it = lower_bound(table.begin(), table.end(), num);
+        if (it == table.end())
         {
-            ++lis;
+            table.push_back(num);
+        }
+        else
+        {
+            *it = num;
         }
     }
 
-    return lis;
+    return table.size();
 }
 #endif
 
