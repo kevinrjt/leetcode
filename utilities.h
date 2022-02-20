@@ -15,7 +15,7 @@ void printListNode(ListNode *head)
         cout << node->val << "->";
     }
 
-    cout << "NULL" << endl;
+    cout << "null" << endl;
 }
 
 ListNode *constructListNode(vector<int> vals)
