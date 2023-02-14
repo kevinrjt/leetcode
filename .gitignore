@@ -31,7 +31,10 @@
 *.out
 *.app
 
+# Symbols
 *.pdb
 *.ilk
+*.dSYM
 
+# VS Code
 .vscode/*
