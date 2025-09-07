@@ -1,6 +1,6 @@
-#include <vector>
-
 #include "../definitions.h"
+
+#include <vector>
 
 using namespace std;
 

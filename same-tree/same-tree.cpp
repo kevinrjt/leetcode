@@ -1,6 +1,6 @@
-#include <stack>
-
 #include "../definitions.h"
+
+#include <stack>
 
 using namespace std;
 

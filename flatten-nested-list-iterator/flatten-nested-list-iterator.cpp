@@ -1,9 +1,9 @@
+#include "../definitions.h"
+
 #include <iostream>
 #include <stack>
 #include <utility>
 #include <vector>
-
-#include "../definitions.h"
 
 using namespace std;
 

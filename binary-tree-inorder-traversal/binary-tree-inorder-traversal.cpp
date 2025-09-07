@@ -1,7 +1,7 @@
+#include "../definitions.h"
+
 #include <stack>
 #include <vector>
-
-#include "../definitions.h"
 
 using namespace std;
 
@@ -53,6 +53,7 @@ vector<int> inorderTraversal(TreeNode *root)
 #endif
 
 #ifdef SOLUTION_3
+// Morris traversal: https://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
 vector<int> inorderTraversal(TreeNode *root)
 {
     vector<int> vals;

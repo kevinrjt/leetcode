@@ -1,10 +1,10 @@
 #ifndef UTILITIES_H_
 #define UTILITIES_H_
 
+#include "definitions.h"
+
 #include <iostream>
 #include <vector>
-
-#include "definitions.h"
 
 using namespace std;
 
